@@ -122,8 +122,55 @@ revealFooterLink()
        La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
     */
 
-// const generateTable = function () {
-//   const newTable = document.getElementById("tableArea")
+const generateTable = function () {
+  const newTable = document.getElementById("tableArea")
+  newTable.innerHTML = `  <table>
+  <thead>
+  <tr>
+  <th>Image</th>
+  <th>Product Name</th>
+  <th>Quantity</th>
+  <th>Price</th>
+  </tr>
+  
+  </thead>
+  <tbody>
+  <tr>
+  <td><img src="https://placecats.com/300/200" alt"foto_mario" width= '50px'></td>
+  <td>mario</td>
+  <td>5</td>
+  <td>100€</td>
+  </tr>
+  <tr>
+  <td><img src="https://placecats.com/300/200" alt"foto_mirko" width= '50px'></td>
+  <td>mirko</td>
+  <td>40</td>
+  <td>300€</td>
+  </tr>
+  <tr>
+  <td><img src="https://placecats.com/300/300" alt"foto_miro" width= '50px'></td>
+  <td>miro</td>
+  <td>5</td>
+  <td>2000€</td>
+  </tr>
+  <tr>
+  <td><img src="https://placecats.com/300/200" alt"foto_mimi" width= '50px'></td>
+  <td>mimi</td>
+  <td>300</td>
+  <td>1€</td>
+  </tr>
+  <tr>
+  <td><img src="https://placecats.com/300/200" alt"foto_mirtillo" width= '50px'></td>
+  <td>mirtillo</td>
+  <td>12</td>
+  <td>500€</td>
+  </tr>
+  </tbody>
+  <table/>
+  `
+}
+generateTable()
+
 //   const table = document.createElement("table")
 //   const headerRow = document.createElement("tr")
 //   headerRow.innerHTML = `<tr>
